@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowDown, TopContainer, TopContainerButton } from "./styled";
+import {
+  AppName,
+  ArrowDown,
+  NameContainer,
+  NameLink,
+  TopContainer,
+  TopContainerButton,
+} from "./styled";
 import { AiFillCaretDown } from "react-icons/ai";
 import { AiFillCaretUp } from "react-icons/ai";
 
@@ -8,9 +15,11 @@ export const TopNavigation = () => {
   const [arrow, setArrow] = useState(false);
   return (
     <TopContainer>
-      <Link>
-        <TopContainerButton>Earth</TopContainerButton>
-      </Link>
+      <NameContainer>
+        <Link to="/">
+          <AppName>MyPortfolio</AppName>
+        </Link>
+      </NameContainer>
       <Link>
         <TopContainerButton>Earth</TopContainerButton>
       </Link>
@@ -25,7 +34,7 @@ export const TopNavigation = () => {
       >
         {arrow ? (
           <AiFillCaretDown
-            size={20}
+            size={23}
             style={{
               color: "#000",
               justifyContent: "center",
@@ -35,7 +44,7 @@ export const TopNavigation = () => {
           />
         ) : (
           <AiFillCaretUp
-            size={20}
+            size={23}
             style={{
               color: "#000",
               justifyContent: "center",
