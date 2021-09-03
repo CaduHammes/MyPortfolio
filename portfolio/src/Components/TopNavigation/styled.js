@@ -24,34 +24,18 @@ export const TopContainerButton = styled.button`
   border: 0;
   justify-content: center;
   align-items: center;
-  &:hover {
-    transition: 300ms;
-    box-shadow: 0px 0px 10px rgb(163, 163, 64);
-    cursor: pointer;
-  }
   border-radius: 5px;
   vertical-align: middle;
   width: 160px;
   height: 50px;
   margin: 5px;
-`;
-export const ArrowDown = styled.button`
-  color: #000;
-  size: 25px;
-  background-color: transparent;
-  border: 0;
-  justify-content: center;
-  align-items: center;
+  transition: transform 300ms;
+  transition-timing-function: ease-out;
   &:hover {
-    transition: 300ms;
-    box-shadow: 0px 0px 10px rgb(163, 163, 64);
     cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #e8e8e8;
   }
-  border-radius: 25px;
-  vertical-align: middle;
-  width: 50px;
-  height: 50px;
-  margin: 5px;
 `;
 
 export const AppName = styled.text`

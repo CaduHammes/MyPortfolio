@@ -1,0 +1,8 @@
+.shuriken {
+  size: 20px;
+  color: #000;
+}
+
+.shuriken:hover {
+  transform: rotate(360deg);
+}
