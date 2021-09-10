@@ -10,10 +10,10 @@ export const HideMenu = () => {
 
   const items = [
     {
-      label: "Options",
+      label: "Meteu essa?!",
       items: [
         {
-          label: "Update",
+          label: "Não tem televisão nessa casa??",
           icon: "pi pi-refresh",
           command: () => {
             toast.current.show({
@@ -25,7 +25,7 @@ export const HideMenu = () => {
           },
         },
         {
-          label: "Delete",
+          label: "Aí se perdeu",
           icon: "pi pi-times",
           command: () => {
             toast.current.show({
